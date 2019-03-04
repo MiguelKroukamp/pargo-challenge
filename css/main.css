@@ -80,7 +80,8 @@ nav {
   text-align: center; }
 
 .progressInfo {
-  display: flex; }
+  display: flex;
+  margin: 2em 0 2em 0; }
   .progressInfo .progressContent {
     display: flex; }
     .progressInfo .progressContent h3 {
@@ -95,6 +96,8 @@ nav {
         font-weight: 901;
         border: none;
         margin: 0.200em; }
+    .progressInfo .progressContent img {
+      width: 15em; }
   .progressInfo .moreInfo {
     margin-left: auto; }
     .progressInfo .moreInfo button {
@@ -120,6 +123,53 @@ nav {
     color: white;
     font-size: 2.5em;
     padding: 2em; }
+
+svg.radial-progress {
+  height: auto;
+  max-width: 150px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%; }
+
+svg.radial-progress circle {
+  fill: rgba(0, 0, 0, 0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129;
+  /* Circumference */
+  stroke-width: 10; }
+
+svg.radial-progress circle.incomplete {
+  opacity: 0.25; }
+
+svg.radial-progress circle.complete {
+  stroke-dasharray: 219.91148575129;
+  /* Circumference */ }
+
+svg.radial-progress text {
+  fill: #fff;
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle; }
+
+/*** COLORS ***/
+/* Primary */
+svg.radial-progress:nth-of-type(6n+1) circle {
+  stroke: blue; }
+
+/* Secondary */
+svg.radial-progress:nth-of-type(6n+2) circle {
+  stroke: #83e4e2; }
+
+/* Tertiary */
+svg.radial-progress:nth-of-type(6n+3) circle {
+  stroke: #fd6470; }
+
+/* Quaternary */
+svg.radial-progress:nth-of-type(6n+4) circle {
+  stroke: #fca858; }
+
+/* Quinary */
+svg.radial-progress:nth-of-type(6n+5) circle {
+  stroke: #fddc32; }
 
 @media (max-width: 900px) {
   body {
