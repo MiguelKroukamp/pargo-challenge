@@ -1,0 +1,153 @@
+body {
+    margin: auto;
+    width: 70%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    a {
+        text-decoration: none;
+    }
+    p {
+        font-weight: 501;
+        padding-left: 1em;
+        color: black;
+    }
+    .navLogo {
+        img {
+            width: 8%;
+        }
+        display: flex;
+        padding: 1em;
+    }
+    .navBtns {
+        display: flex;
+        #btn1 {
+            background-color: yellow;
+            border: none;
+            width: 7em;
+            color: black;
+            font-weight: 501;
+        }
+        #btn2 {
+            background-color: blue;
+            border: none;
+            width: 7em;
+            color: white;
+            font-weight: 501;
+        }
+    }
+}
+.landingPage {
+    background-image: url(../img/background-image.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 2.5em;
+        padding: 2em;
+    }
+}
+.tab {
+    border-bottom: solid grey 0.125em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 4em;
+    button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        padding: 1em;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    button:hover {
+        background-color: #ddd;
+    }
+    button.active {
+        background-color: #ccc;
+    }
+    .tabcontent {
+        display: none;
+    }
+}
+  
+.location {
+    display: flex;
+    .locationImg {
+        img {
+            width: 20em;
+        }
+    }
+    .locationContent {
+        padding-left: 2em;
+    }
+}
+.trackOrder {
+    h3 {
+        text-align: center;
+    }
+}
+.progressInfo {
+    display: flex;
+    .progressContent {
+        display: flex;
+        h3 {
+            margin-bottom: 0;
+        }
+        p {
+            margin: 0.125em 0 0.500em 0;
+        }
+        .timeFrame {
+            display: flex;
+            button {
+                width: 15em;
+                height: 3em;
+                font-weight: 901;
+                border: none;
+                margin: 0.200em;
+            }
+        }
+    }
+    .moreInfo {
+        margin-left: auto;
+        button {
+            height: 100%;
+            width: 11em;
+            background-color: blue;
+            color: white;
+            border: none;
+            font-weight: 901;
+            font-size: 1.1em;
+        }
+    }
+}
+
+
+
+.detailsLandingPage {
+    background-image: url(https://lh3.googleusercontent.com/proxy/51oZhcx4NeJiUOPYUjbucOs_WGUHzYo0shprpFIzGp7YWGkG8lOrLhdPsKgJ602UxgAN-cVZ6j6rDXOKRtkK-wrwQ-GXJkxtd89fFhmihU2DSNgRACTDhQ=w1392-h935-p-rw);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 2.5em;
+        padding: 2em;
+    }
+}

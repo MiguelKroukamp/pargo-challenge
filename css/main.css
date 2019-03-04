@@ -18,7 +18,7 @@ nav {
     display: flex;
     padding: 1em; }
     nav .navLogo img {
-      width: 5%; }
+      width: 8%; }
   nav .navBtns {
     display: flex; }
     nav .navBtns #btn1 {
@@ -120,5 +120,132 @@ nav {
     color: white;
     font-size: 2.5em;
     padding: 2em; }
+
+@media (max-width: 900px) {
+  body {
+    margin: auto;
+    width: 70%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+  nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white; }
+    nav a {
+      text-decoration: none; }
+    nav p {
+      font-weight: 501;
+      padding-left: 1em;
+      color: black; }
+    nav .navLogo {
+      display: flex;
+      padding: 1em; }
+      nav .navLogo img {
+        width: 15%; }
+    nav .navBtns {
+      display: flex; }
+      nav .navBtns #btn1 {
+        background-color: yellow;
+        border: none;
+        width: 7em;
+        color: black;
+        font-weight: 501; }
+      nav .navBtns #btn2 {
+        background-color: blue;
+        border: none;
+        width: 7em;
+        color: white;
+        font-weight: 501; }
+
+  .landingPage {
+    background-image: url(../img/background-image.jpg);
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .landingPage h1 {
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.5em;
+      padding: 2em; }
+
+  .tab {
+    border-bottom: solid grey 0.125em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 4em; }
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      padding: 1em;
+      transition: 0.3s;
+      font-size: 1em; }
+    .tab button:hover {
+      background-color: #ddd; }
+    .tab button.active {
+      background-color: #ccc; }
+    .tab .tabcontent {
+      display: none; }
+
+  .location {
+    display: block;
+    text-align: center; }
+    .location .locationContent {
+      padding: 0; }
+    .location .locationImg img {
+      width: 10em; }
+
+  .trackOrder h3 {
+    text-align: center; }
+
+  .progressInfo {
+    display: block;
+    text-align: center; }
+    .progressInfo .progressContent {
+      display: block; }
+      .progressInfo .progressContent h3 {
+        margin-bottom: 0; }
+      .progressInfo .progressContent p {
+        margin: 0.125em 0 0.500em 0;
+        font-size: 0.1 0em; }
+      .progressInfo .progressContent .timeFrame {
+        display: block; }
+        .progressInfo .progressContent .timeFrame button {
+          width: 15em;
+          height: 3em;
+          font-weight: 901;
+          border: none;
+          margin: 0.200em; }
+    .progressInfo .moreInfo {
+      margin-left: auto; }
+      .progressInfo .moreInfo button {
+        height: 100%;
+        width: 11em;
+        background-color: blue;
+        color: white;
+        border: none;
+        font-weight: 901;
+        font-size: 1.1em; }
+
+  .detailsLandingPage {
+    background-image: url(https://lh3.googleusercontent.com/proxy/51oZhcx4NeJiUOPYUjbucOs_WGUHzYo0shprpFIzGp7YWGkG8lOrLhdPsKgJ602UxgAN-cVZ6j6rDXOKRtkK-wrwQ-GXJkxtd89fFhmihU2DSNgRACTDhQ=w1392-h935-p-rw);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .detailsLandingPage h1 {
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 2.5em;
+      padding: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
