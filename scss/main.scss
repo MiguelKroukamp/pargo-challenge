@@ -5,9 +5,16 @@ body {
 }
 nav {
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    a {
+        text-decoration: none;
+    }
     p {
         font-weight: 501;
         padding-left: 1em;
+        color: black;
     }
     .navLogo {
         img {
@@ -46,7 +53,7 @@ nav {
     h1 {
         text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
         color: white;
-        font-size: 3.5em;
+        font-size: 2.5em;
         padding: 2em;
     }
 }
@@ -123,5 +130,24 @@ nav {
             font-weight: 901;
             font-size: 1.1em;
         }
+    }
+}
+
+
+
+.detailsLandingPage {
+    background-image: url(https://lh3.googleusercontent.com/proxy/51oZhcx4NeJiUOPYUjbucOs_WGUHzYo0shprpFIzGp7YWGkG8lOrLhdPsKgJ602UxgAN-cVZ6j6rDXOKRtkK-wrwQ-GXJkxtd89fFhmihU2DSNgRACTDhQ=w1392-h935-p-rw);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 2.5em;
+        padding: 2em;
     }
 }

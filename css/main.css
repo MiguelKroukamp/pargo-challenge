@@ -4,10 +4,16 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 nav {
-  display: flex; }
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white; }
+  nav a {
+    text-decoration: none; }
   nav p {
     font-weight: 501;
-    padding-left: 1em; }
+    padding-left: 1em;
+    color: black; }
   nav .navLogo {
     display: flex;
     padding: 1em; }
@@ -40,7 +46,7 @@ nav {
   .landingPage h1 {
     text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 3.5em;
+    font-size: 2.5em;
     padding: 2em; }
 
 .tab {
@@ -99,5 +105,20 @@ nav {
       border: none;
       font-weight: 901;
       font-size: 1.1em; }
+
+.detailsLandingPage {
+  background-image: url(https://lh3.googleusercontent.com/proxy/51oZhcx4NeJiUOPYUjbucOs_WGUHzYo0shprpFIzGp7YWGkG8lOrLhdPsKgJ602UxgAN-cVZ6j6rDXOKRtkK-wrwQ-GXJkxtd89fFhmihU2DSNgRACTDhQ=w1392-h935-p-rw);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .detailsLandingPage h1 {
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2.5em;
+    padding: 2em; }
 
 /*# sourceMappingURL=main.css.map */
